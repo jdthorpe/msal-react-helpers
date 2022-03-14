@@ -2,9 +2,10 @@
   "name": "msal-react-helpers",
   "version": "1.0.0",
   "description": "Helper functions for the @microsoft/msal-react library",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "yarn test"
+    "build": "rimraf ./build && tsc",
+    "test": "jest"
   },
   "keywords": [
     "msal",
@@ -21,6 +22,7 @@
     "@testing-library/user-event": "^12.1.10",
     "jest": "^27.5.1",
     "react-dom": "^17.0.2",
+    "rimraf": "^3.0.2",
     "typescript": "^4.6.2"
   },
   "dependencies": {
